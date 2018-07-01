@@ -2,7 +2,7 @@ package it.polito.tdp.formulaone.model;
 
 public class Season {
 
-	private int year;
+	private int year;// prima era oggetto year ma non ci piace lo cambio in int
 	private String url;
 
 	public Season(int year, String url) {
@@ -29,6 +29,7 @@ public class Season {
 	@Override
 	public String toString() {
 		return String.valueOf(year);
+		//year è un intero, uso String.valueOf() per convertirlo in string
 	}
 
 }

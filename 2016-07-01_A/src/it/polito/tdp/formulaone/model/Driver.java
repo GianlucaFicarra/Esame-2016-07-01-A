@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 public class Driver {
 
+	//classe alleggertita, prendo dal DB sono le info utili per visualizzare i piloti
 	private int driverId;
 	private String forename;
 	private String surname;
@@ -47,6 +48,10 @@ public class Driver {
 		return result;
 	}
 
+	
+	//grafo è implementato come una mappa, i suoi vertici devo 
+	//aver implementato hash e equals, sul loro id
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -61,6 +66,7 @@ public class Driver {
 		return true;
 	}
 
+	//to string tutti
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
